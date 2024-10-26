@@ -3,7 +3,7 @@ library(ggplot2)
 library(lmtest)
 library(dplyr)
 
-#-----------------------------------------------------------------------------
+# GRÁFICO DE COMPARAÇÕES MÚLTIPLAS
 
 analise_dicc <- function(data, resposta, tratamento, 
                          cor = "red", 
