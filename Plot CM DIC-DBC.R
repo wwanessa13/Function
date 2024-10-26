@@ -6,7 +6,7 @@ library(dplyr)
 #-----------------------------------------------------------------------------
 
 analise_dicc <- function(data, resposta, tratamento, 
-                         cor = "green", 
+                         cor = "blue", 
                          titulo_grafico = "Teste de Tukey", 
                          eixo_x = "Tratamento", 
                          eixo_y = "Variável resposta") {
@@ -53,7 +53,7 @@ dic <- data.frame(
 dic$TRAT<-as.factor(dic$TRAT)
 
 analise_dicc(dic, "PROD", "TRAT", 
-             cor = "red", 
+             cor = "yellow", 
              titulo_grafico = "Teste de Tukey para Produtividade", 
              eixo_x = "Tratamento", 
              eixo_y = "Produtividade (kg/ha)")
@@ -61,7 +61,7 @@ analise_dicc(dic, "PROD", "TRAT",
 #-------------------------------------------------------------------------------
 
 analise_dbcc <- function(data, resposta, tratamento, bloco, 
-                         cor = "green", 
+                         cor = "blue", 
                          titulo_grafico = "Teste de Tukey", 
                          eixo_x = "Tratamento", 
                          eixo_y = "Variável resposta") {
