@@ -6,7 +6,7 @@ library(dplyr)
 #-----------------------------------------------------------------------------
 
 analise_dicc <- function(data, resposta, tratamento, 
-                         cor = "blue", 
+                         cor = "red", 
                          titulo_grafico = "Teste de Tukey", 
                          eixo_x = "Tratamento", 
                          eixo_y = "Variável resposta") {
@@ -109,7 +109,7 @@ dbc$TRAT <- as.factor(dbc$TRAT)
 dbc$BLOCO <- as.factor(dbc$BLOCO)
 
 analise_dbcc(dbc, "NUTRI", "TRAT", "BLOCO", 
-             cor = 'purple',
+             cor = 'blue',
              titulo_grafico = "Teste de Tukey para Nutrição", 
              eixo_x = "Tratamento", 
              eixo_y = "Nutrição")
